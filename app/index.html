@@ -3,10 +3,24 @@
  <head>
  	<meta charset="UTF-8">
  	<title>Title of the document</title>
+ 	<link href="./assets/styles/styles.css" rel="stylesheet" type="text/css">
+ 	<!-- bower:css -->
+ 	<!-- endbower -->
  </head>
 
- <body>
- 	Content of the document......
+ <body ng-app="app">
+ 	<div ng-view=""></div>
  </body>
+ <!-- bower:js -->
+ <script src="assets/components/angular/angular.js"></script>
+ <script src="assets/components/angular-route/angular-route.js"></script>
+ <script src="assets/components/angular-touch/angular-touch.js"></script>
+ <!-- endbower -->
+
+<script src="app.modules.js"></script>
+<script src="app.routes.js"></script>
+<script src="features/home/homeController.js"></script>
+
+
 
  </html> 
